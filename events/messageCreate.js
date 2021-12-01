@@ -1,11 +1,13 @@
 const config = require('../config.json')
-const { devs } = require('../config.json')
+const { devs, prefix: GuildPrefix} = require('../config.json')
+const { getPrefix } = require("../utils/db/prefix-utils");
 
 
 module.exports = {
     name: 'messageCreate',
     async run (message, client) {
-        let prefix = config.prefix
+        let prefix = await getPrefix(message.guild.id)
+
         if (message.author.bot) return
 
         if (message.content.match(new RegExp('^<@!?' + client.user.id + '>'))) return message.reply(`My prefix for this server is \`${prefix}\`. You can change it at any time buy running the setPrefix command.`)

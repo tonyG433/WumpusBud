@@ -21,7 +21,7 @@ const client = new Client({
     partials: ['USER', 'CHANNEL', 'GUILD_MEMBER', 'MESSAGE', 'REACTION'],
     presence: {
         activities: [{
-            name: `Myself being developed `,
+            name: `myself being developed `,
             type: 'WATCHING'
         }]
     }
@@ -40,5 +40,14 @@ require('./handlers/command')(client)
 
 // loads the events
 require('./handlers/event')(client)
+
+mongoose.connect(config.mongoURI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => {
+    logger('MongoDB', 'Successfully connected to MongoDB!')
+}).catch(e => {
+    logger('Error', `Could not connect to MongoDB! Error: \n${e}`)
+})
 
 client.login(config.token);
