@@ -6,7 +6,7 @@ module.exports = (client) => {
     for (const folder of client.categories) {
         if (folder === 'context') continue
 
-        const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('js') || file.endsWith('ts')) // <= what could this possibly mean!?!?!?!
+        const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('js') || file.endsWith('ts')) // ts soon perhaps
         logger('Load', 'Searching for ' + chalk.underline.white(folder) + ' ' + 'commands...\n' )
         for (const file of commandFiles) {
             const command = require(`../commands/${folder}/${file}`)

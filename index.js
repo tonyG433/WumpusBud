@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const chalk = require("chalk")
 const logger = require('./utils/logger')
 const {Client, Intents, Message, Collection} = require('discord.js');
+const {colors} = require("debug");
 
 const client = new Client({
     intents: [
@@ -25,11 +26,11 @@ const client = new Client({
             type: 'WATCHING'
         }]
     }
-});
-
+})
+// My least favourite
 client.commands = new Collection()
 
-// My favourite
+// My favourite || +450 discord credit
 client.slashCommands = new Collection()
 
 // collection of the command categories which are the folders in the commands folder
@@ -37,6 +38,9 @@ client.categories = fs.readdirSync('./commands')
 
 // loads the commands
 require('./handlers/command')(client)
+
+// loads the slash commands
+require('./handlers/slashCommand')(client, false)
 
 // loads the events
 require('./handlers/event')(client)
@@ -49,5 +53,7 @@ mongoose.connect(config.mongoURI, {
 }).catch(e => {
     logger('Error', `Could not connect to MongoDB! Error: \n${e}`)
 })
+
+require("colors")
 
 client.login(config.token);

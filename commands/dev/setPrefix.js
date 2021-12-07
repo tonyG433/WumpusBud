@@ -6,7 +6,7 @@ module.exports = {
     description: 'Set the bot\'s prefix',
     aliases: ['sp'],
     category: 'config',
-    permissions: 'ADMINISTRATOR', // Only admins can set the prefix
+    permissions: 'BOT_DEV', // Since users are able to use slash commands, there is no point in them setting the prefix
     async run (client, message, args) {
         let newPrefix = args[0]
         const currentPrefix = await getPrefix(message.guild?.id)

@@ -6,7 +6,7 @@ const { getPrefix } = require("../utils/db/prefix-utils");
 module.exports = {
     name: 'messageCreate',
     async run (message, client) {
-        let prefix = await getPrefix(message.guild.id)
+        let prefix = (await getPrefix(message.guild.id)) || GuildPrefix
 
         if (message.author.bot) return
 
