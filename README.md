@@ -47,6 +47,9 @@ node index.js
 
 * [@tonyG433](https://github.com/tonyG433)
 
+  * [@Conrad36](https://github.com/Conrad36)
+  * [@FadTheChad](https://github.com/FadTheChad)
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
