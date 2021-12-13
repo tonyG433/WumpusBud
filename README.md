@@ -13,7 +13,7 @@
   </p>
 </div>
 
-<h3>Welcome to WumpusBud! WumpusBud is an upcoming discord bot made with JavaScript and discord.js. The idea of the bot is to let you managae your own Wumpus pet and collect coins to buy resources. This repository is open source, and you can freely selfhost the bot, as long as you credit me and the other contributors. Only thing you have to do is clone this repository, crate a config.json file with the parameters bellow, install the NPM packages and run the bot. <i>(Note: The bot still isn't released yet, therefore uptime may not be good.)</i> </h3>
+<h3>Welcome to WumpusBud! WumpusBud is an upcoming discord bot made with JavaScript and discord.js. The idea of the bot is to let you manage your own Wumpus pet and collect coins to buy resources. This repository is open source, and you can freely selfhost the bot, as long as you credit me and the other contributors. Only thing you have to do is clone this repository, crate a config.json file with the parameters bellow, install the NPM packages and run the bot. <i>(Note: The bot still isn't released yet, therefore uptime may not be good.)</i> </h3>
 
 <h2><a href="https://app.revolt.chat/bot/01FM5Q2BVG11V4NSRXPWR29TVP">✉ Invite the bot by clicking here!</a></h2>
 
