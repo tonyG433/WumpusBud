@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <p>
-    <a><img src="https://cdn.discordapp.com/attachments/641707771120713730/919879890336104488/WUMOUSBANNER.png" width="546" alt="discord.js" /></a>
+    <a href="https://discord.com/api/oauth2/authorize?client_id=914468878401282068&permissions=138647300160&scope=bot%20applications.commands"><img src="https://cdn.discordapp.com/attachments/641707771120713730/919879890336104488/WUMOUSBANNER.png" width="546" alt="discord.js" /></a>
   </p>
   <br />
   <p>
@@ -15,7 +15,7 @@
 
 <h3>Welcome to WumpusBud! WumpusBud is an upcoming discord bot made with JavaScript and discord.js. The idea of the bot is to let you manage your own Wumpus pet and collect coins to buy resources. This repository is open source, and you can freely selfhost the bot, as long as you credit me and the other contributors. Only thing you have to do is clone this repository, create a config.json file with the parameters bellow, install the NPM packages and run the bot. <i>(Note: The bot still isn't released yet, therefore uptime may not be good.)</i> </h3>
 
-<h2><a href="https://app.revolt.chat/bot/01FM5Q2BVG11V4NSRXPWR29TVP">✉ Invite the bot by clicking here!</a></h2>
+<h2><a href="https://discord.com/api/oauth2/authorize?client_id=914468878401282068&permissions=138647300160&scope=bot%20applications.commands">✉ Invite the bot by clicking here!</a></h2>
 
 
 ## 💻 config.json example
