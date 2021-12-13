@@ -33,14 +33,17 @@ module.exports = {
         //TODO: Canvas
 
         if(!hashat) {
-            console.log('embed.setImage and the wumpus')
+            console.log('embed.setImage and the wumpus');
+            return await interaction.reply({ embeds: [embed] })
         }
 
-        if(hashat === true) {
-            console.log('embed.setImage and wumpus with hat')
-        }
+        console.log('embed.setImage and wumpus with a hat.')
+        // if(hashat === true) {
+        //     console.log('embed.setImage and wumpus with hat')
+        // }
+        // This shit? No. No more of this shit.  
 
-        await interaction.reply({content: null, embeds: [embed]})
+        await interaction.reply({ embeds: [embed] })
 
     }
 };
