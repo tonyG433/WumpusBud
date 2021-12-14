@@ -14,14 +14,11 @@
 </div>
 
 
-<h2><a href="https://discord.com/api/oauth2/authorize?client_id=914468878401282068&permissions=138647300160&scope=bot%20applications.commands">✉ Invite the bot by clicking here!</a></h2>
 
-
-
-# 🤖 WumpusBud
+# 🤖 What is WumpusBud?
 
 **WumpusBud** is an *upcoming* Discord bot made with JavaScript and discord.js. The idea of the bot is to let you manage your own Wumpus pet and collect coins to buy resources. This repository is **open source**, and you can freely selfhost the bot, as long as you credit me and the other contributors.
-# 💻 Setting the bot up.
+# 💻 Setting the bot up
 
  Configurating the config.json
 ```json
@@ -62,4 +59,7 @@ Copyright © 2021 [tonyG433](https://github.com/tonyG433)
 
 
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+
+*** 
+Made with [Discord Bot README Template]()
 
