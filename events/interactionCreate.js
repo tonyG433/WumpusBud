@@ -11,7 +11,7 @@ module.exports = {
             if (!command) return;
 
             let { permissions } = command
-            if ((permissions === 'BOT_DEV' || command.category === 'dev') && !devs.includes(interaction.user.id)) return interaction.reply('You arent a dev pussy')
+            if ((permissions === 'BOT_DEV' || command.category === 'dev') && !devs.includes(interaction.user.id)) return interaction.reply({content :'You arent a dev pussy', ephemeral: true})
 
             try {
                 await command.slashRun(client, interaction);
